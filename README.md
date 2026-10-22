@@ -1,59 +1,83 @@
 # ConectaTrampo
 
-Portal gratuito de oportunidades, links externos, freelancers e serviços, com foco inicial em Joinville/SC.
+**Conectando pessoas a oportunidades de trabalho.**
 
-## O que está implementado
-- Página pública sem vagas demonstrativas: o site começa vazio e mostra apenas publicações reais do banco.
-- Publicação de link externo com apenas um campo obrigatório: o sistema tenta detectar título, descrição, organização, categoria, localização, modalidade e remuneração a partir de Open Graph, meta description e Schema.org `JobPosting`.
-- Formulários para empresas/pessoas publicarem empregos, procura por freelancer e serviços.
-- PostgreSQL no Neon para que todas as publicações sejam compartilhadas entre visitantes e dispositivos.
-- Link privado de gerenciamento gerado na publicação. O publicador pode guardar esse link e encerrar a oportunidade sem criar conta.
-- Denúncia de anúncios via API, preparada para ser ligada a um botão de denúncia na interface.
-- Validação básica de URLs, redirects manuais, timeout e limite de leitura ao buscar metadados.
-- Documentos iniciais de privacidade, termos e cookies; sem scripts publicitários de rastreamento.
+O ConectaTrampo é uma plataforma digital destinada à divulgação e à consulta de oportunidades profissionais, incluindo vagas de emprego e trabalhos freelance.
 
-## Requisitos
-- Node.js 20.9+
-- Conta Neon PostgreSQL
-- npm
+A proposta é facilitar a conexão entre quem oferece uma oportunidade e quem procura trabalho, tornando as informações mais acessíveis e organizadas.
 
-## Configurar o banco Neon
-1. Crie um projeto PostgreSQL no Neon.
-2. Abra o SQL Editor no painel Neon.
-3. Copie e execute o conteúdo de `database/schema.sql`.
-4. No Neon, copie a connection string **pooled** para uso da aplicação.
-5. Crie um arquivo `.env.local` na raiz com:
+## Objetivos
 
-```env
-DATABASE_URL=postgresql://...sua-connection-string-do-neon...
-```
+- Facilitar a descoberta de oportunidades profissionais.
+- Permitir a divulgação de vagas por empresas e pessoas.
+- Reunir oportunidades de emprego e trabalhos freelance.
+- Disponibilizar informações sobre requisitos, localização e modalidade de trabalho.
+- Direcionar os interessados aos canais de candidatura ou contato indicados pelo publicador.
 
-Não compartilhe `.env.local`, não faça commit e nunca use `NEXT_PUBLIC_DATABASE_URL`.
+## Funcionalidades
 
-## Executar localmente
+As funcionalidades previstas ou implementadas devem ser identificadas conforme a versão atual da aplicação:
 
-```bash
-npm install
-npm run dev
-```
+- Listagem de oportunidades.
+- Consulta aos detalhes de cada oportunidade.
+- Publicação de oportunidades.
+- Cadastro de informações sobre a empresa ou o responsável pela publicação.
+- Inclusão de links externos para candidatura ou contato.
+- Edição e gerenciamento das próprias publicações.
+- Encerramento e reativação de oportunidades.
+- Exclusão de publicações.
+- Denúncia de oportunidades suspeitas ou inadequadas.
+- Validação dos dados enviados.
+- Armazenamento persistente das oportunidades em banco de dados.
 
-Abra `http://localhost:3000`.
+## Tecnologias
 
-## Como funciona o link externo
-A pessoa seleciona “Tenho apenas um link”, cola a URL e publica. O servidor tenta extrair metadados públicos do HTML. Muitos sites bloqueiam robôs, exigem login ou não disponibilizam os dados estruturados; nesses casos o anúncio usa um título genérico e mantém o link original para o visitante abrir. A extração não é garantida e o sistema não afirma que a vaga continua aberta.
+A base do projeto utiliza tecnologias do ecossistema web, incluindo:
 
-## Como o publicador encerra a publicação
-Após publicar, o sistema mostra uma chave de gerenciamento secreta uma única vez. O usuário deve copiar e guardar a URL privada. A posse desse link permite encerrar o anúncio; se o link for perdido, não há recuperação automática na versão atual. Não compartilhe essa URL. No banco, armazenamos apenas o hash da chave.
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
 
-## API
-- `GET /api/opportunities` — lista oportunidades ativas; aceita `q`, `category` e `kind`.
-- `POST /api/opportunities` — cria oportunidade e retorna link privado de gerenciamento.
-- `GET /api/manage/:token` — consulta a publicação ligada ao token.
-- `DELETE /api/manage/:token` — encerra a publicação.
-- `POST /api/reports` — registra uma denúncia (a interface de denúncia ainda precisa ser conectada).
+O banco de dados, o mecanismo de acesso aos dados e os serviços de hospedagem devem ser identificados conforme a configuração efetiva do projeto.
 
-## Antes de publicar na internet
-Este é um MVP inicial, não uma auditoria de segurança. Antes do lançamento público, implemente rate limiting por IP/conta, CAPTCHA adaptativo, e-mail opcional para recuperação do link de gerenciamento, painel administrativo autenticado para analisar denúncias, monitoramento de abusos e testes de segurança. A extração de URL do servidor requer uma revisão de SSRF/DNS rebinding e idealmente um serviço isolado de pré-visualização; as validações atuais são defesa inicial, não garantia completa. Defina também os dados reais do controlador da plataforma nas políticas jurídicas e revise os textos com profissional qualificado.
+## Execução local
 
-## Deploy na Vercel
-Importe o repositório GitHub, configure `DATABASE_URL` em Project Settings → Environment Variables e faça deploy. Execute `database/schema.sql` no Neon antes de testar o site publicado.
+1. Instale o Node.js em uma versão compatível com o projeto.
+2. Clone o repositório.
+3. Instale as dependências.
+4. Configure as variáveis de ambiente necessárias.
+5. Execute as migrações do banco de dados, quando aplicável.
+6. Inicie o servidor de desenvolvimento.
+
+Os comandos exatos devem seguir os scripts definidos no arquivo `package.json`.
+
+## Configuração
+
+Credenciais, URLs privadas e chaves de serviços devem ser armazenadas em variáveis de ambiente.
+
+Não publique senhas, tokens privados ou credenciais do banco de dados no repositório.
+
+O arquivo `.env.example` deve apresentar somente os nomes das variáveis necessárias, sem valores secretos.
+
+## Banco de dados
+
+As oportunidades devem ser armazenadas no banco de dados configurado pela aplicação.
+
+A estrutura das tabelas, os relacionamentos, as regras de validação e os procedimentos de migração estão descritos em `docs/BANCO_DE_DADOS.md`, quando esse documento estiver disponível.
+
+## Privacidade e segurança
+
+A plataforma deve tratar os dados pessoais de acordo com sua finalidade e observar a legislação aplicável, incluindo a Lei Geral de Proteção de Dados Pessoais (LGPD).
+
+As informações sobre coleta, armazenamento, compartilhamento e exclusão de dados devem refletir o funcionamento real da aplicação.
+
+## Contribuição
+
+Alterações devem preservar a integridade dos dados, a segurança das publicações e a consistência entre o código, o banco de dados e a documentação.
+
+Consulte `CONTRIBUTING.md` para orientações de desenvolvimento, caso esse arquivo esteja disponível.
+
+## Status do projeto
+
+O ConectaTrampo está em desenvolvimento contínuo. As funcionalidades disponíveis devem ser confirmadas na versão publicada da aplicação.
