@@ -1,215 +1,203 @@
-export const metadata = {
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
   title: "Política de Privacidade | ConectaTrampo",
   description:
-    "Conheça as práticas de privacidade e proteção de dados do ConectaTrampo.",
+    "Conheça as práticas de tratamento e proteção de dados pessoais do ConectaTrampo.",
 };
 
 const sections = [
   {
-    title: "1. Quem somos",
+    title: "1. Sobre o ConectaTrampo",
     paragraphs: [
       "O ConectaTrampo é uma plataforma destinada à divulgação e consulta de oportunidades de emprego, trabalho autônomo e serviços freelance.",
-      "Para fins da legislação de proteção de dados, é necessário identificar o responsável pelo tratamento das informações pessoais. Os dados oficiais desse responsável e seu canal de contato devem ser preenchidos antes da publicação desta política.",
+      "O responsável pelo tratamento dos dados pessoais deverá ser identificado nesta política, juntamente com um canal válido para contato sobre questões de privacidade.",
     ],
   },
   {
     title: "2. Quais informações podem ser tratadas?",
     paragraphs: [
       "As informações tratadas dependem das funcionalidades utilizadas e dos dados efetivamente enviados à plataforma.",
-      "Elas podem incluir dados inseridos em anúncios, como nome ou identificação do anunciante, nome de empresa, descrição da oportunidade, localização, remuneração informada, categoria e meios de contato.",
-      "Também podem ser tratados dados técnicos necessários ao funcionamento e à segurança do serviço, como endereço IP, registros de acesso e informações sobre erros, quando efetivamente coletados.",
-      "Não solicitamos informações pessoais sem uma finalidade relacionada ao funcionamento, à segurança ou às atividades da plataforma.",
+      "Elas podem incluir informações inseridas em anúncios, como identificação do anunciante, nome da empresa, descrição da oportunidade, localização, remuneração e meios de contato.",
+      "Dados técnicos, como endereço IP e registros de acesso, somente devem ser descritos como coletados quando a aplicação ou seus fornecedores efetivamente os registrarem.",
     ],
   },
   {
     title: "3. Informações armazenadas no banco de dados",
     paragraphs: [
-      "As informações enviadas à plataforma podem ser armazenadas em banco de dados para permitir a criação, consulta, atualização e administração das oportunidades publicadas.",
-      "A existência de um banco de dados não significa que todas as informações mencionadas nesta política sejam coletadas. O tratamento depende dos campos existentes, das rotas da aplicação e das funcionalidades efetivamente implementadas.",
-      "As informações armazenadas devem ser limitadas ao necessário para oferecer o serviço e cumprir as finalidades informadas ao usuário.",
+      "As informações enviadas pelos usuários podem ser armazenadas em banco de dados para permitir a publicação, consulta, atualização e administração das oportunidades.",
+      "Os tipos de dados armazenados dependem dos campos existentes no banco, das rotas da aplicação e das funcionalidades implementadas.",
+      "O tratamento deve se limitar às informações necessárias para finalidades legítimas e compatíveis com o funcionamento da plataforma.",
     ],
   },
   {
-    title: "4. Para que utilizamos os dados?",
+    title: "4. Finalidades do tratamento",
     paragraphs: [
-      "Podemos tratar informações para disponibilizar oportunidades, permitir a publicação e a administração de anúncios, responder a solicitações, prevenir fraudes, investigar denúncias, proteger a plataforma e cumprir obrigações legais.",
-      "Os dados não devem ser utilizados para finalidades incompatíveis com aquelas informadas nesta política sem a devida justificativa legal e, quando necessário, informação ou consentimento do titular.",
+      "As informações podem ser utilizadas para disponibilizar oportunidades, administrar anúncios, responder a solicitações, investigar denúncias, prevenir fraudes, proteger a plataforma e cumprir obrigações legais.",
+      "Os dados não devem ser utilizados para finalidades incompatíveis com aquelas informadas ao titular sem a devida justificativa legal.",
     ],
   },
   {
-    title: "5. Publicação de oportunidades e dados públicos",
+    title: "5. Informações públicas nos anúncios",
     paragraphs: [
-      "As informações inseridas em anúncios podem ficar visíveis publicamente para permitir que interessados conheçam as oportunidades.",
-      "Antes de publicar, o anunciante deve verificar quais informações serão exibidas. Não é recomendável incluir documentos pessoais, endereços residenciais completos, dados bancários ou outras informações sensíveis na descrição pública de uma oportunidade.",
-      "Quando houver informações pessoais publicadas indevidamente, o titular poderá solicitar uma análise por meio do canal de contato oficial.",
+      "As informações inseridas nos anúncios podem ficar visíveis publicamente para que interessados conheçam as oportunidades.",
+      "Antes de publicar, o anunciante deve verificar quais informações serão exibidas e evitar incluir documentos pessoais, dados bancários ou informações privadas desnecessárias.",
+      "Pedidos relacionados a informações pessoais publicadas indevidamente poderão ser encaminhados ao responsável pela plataforma.",
     ],
   },
   {
-    title: "6. Links e serviços externos",
+    title: "6. Compartilhamento de dados",
     paragraphs: [
-      "Os anúncios podem conter links para sites, formulários, plataformas de contratação ou canais de contato de terceiros.",
-      "Ao acessar esses serviços, o usuário estará sujeito às políticas e às práticas dos respectivos responsáveis. O ConectaTrampo não controla necessariamente o tratamento de dados realizado nesses ambientes externos.",
-      "Recomendamos verificar a autenticidade dos links e evitar compartilhar documentos ou informações financeiras com destinatários desconhecidos.",
+      "Os dados poderão ser compartilhados quando necessário para operar a plataforma, utilizar serviços de hospedagem ou banco de dados, atender obrigações legais ou proteger direitos.",
+      "Os fornecedores efetivamente utilizados deverão ser identificados conforme a infraestrutura real do ConectaTrampo. O compartilhamento deve se limitar ao necessário para cada finalidade.",
     ],
   },
   {
-    title: "7. Compartilhamento de informações",
+    title: "7. Links externos",
     paragraphs: [
-      "Informações poderão ser compartilhadas quando isso for necessário para operar e proteger a plataforma, utilizar provedores de hospedagem ou banco de dados, atender obrigações legais ou responder a solicitações legítimas de autoridades competentes.",
-      "Quando houver utilização de fornecedores, o compartilhamento deverá se limitar ao necessário para a finalidade correspondente, observadas as obrigações de proteção de dados aplicáveis.",
-      "A identificação dos fornecedores efetivamente utilizados deverá ser mantida atualizada de acordo com a infraestrutura do ConectaTrampo.",
+      "Os anúncios podem conter links para sites, formulários, aplicativos de mensagens e outros serviços externos.",
+      "Ao acessar esses serviços, o usuário estará sujeito às políticas dos respectivos responsáveis. O ConectaTrampo não controla necessariamente o tratamento de dados realizado nesses ambientes.",
     ],
   },
   {
     title: "8. Segurança das informações",
     paragraphs: [
-      "Adotamos, ou buscamos implementar, medidas técnicas e administrativas proporcionais aos riscos do tratamento de dados.",
-      "Essas medidas podem incluir controle de acesso, proteção de credenciais, validação de informações recebidas, restrição de permissões e atualização dos componentes da aplicação.",
-      "Nenhum sistema é absolutamente imune a incidentes. Caso ocorra um incidente de segurança que possa acarretar risco ou dano relevante, serão adotadas as providências exigidas pela legislação aplicável.",
+      "A proteção dos dados deve ser apoiada por medidas técnicas e administrativas adequadas aos riscos, incluindo controles de acesso, proteção de credenciais e validação das informações recebidas.",
+      "Nenhum sistema é absolutamente imune a incidentes. Ocorrências envolvendo dados pessoais deverão ser tratadas conforme as obrigações legais aplicáveis.",
     ],
   },
   {
     title: "9. Retenção e exclusão",
     paragraphs: [
-      "As informações são mantidas pelo período necessário para cumprir suas finalidades, atender obrigações legais e proteger direitos legítimos.",
-      "O encerramento de uma oportunidade não implica necessariamente a exclusão imediata de seu registro do banco de dados. A manutenção, o arquivamento e a exclusão devem observar a finalidade do registro e os prazos legais aplicáveis.",
-      "O titular poderá solicitar informações sobre o tratamento de seus dados e, quando cabível, sua correção, anonimização, bloqueio ou exclusão, observadas as hipóteses legais de conservação.",
+      "As informações devem ser mantidas pelo período necessário para cumprir suas finalidades, obrigações legais e outras hipóteses legítimas de conservação.",
+      "O encerramento ou a remoção de um anúncio da listagem pública não significa necessariamente a exclusão imediata de todos os registros do banco de dados.",
+      "Os pedidos de exclusão serão analisados conforme os direitos do titular e as hipóteses legais que permitam ou exijam a conservação de informações.",
     ],
   },
   {
     title: "10. Direitos dos titulares",
     paragraphs: [
-      "Nos termos da Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018), o titular poderá exercer os direitos aplicáveis ao seu caso, incluindo confirmação da existência de tratamento, acesso aos dados, correção de informações incompletas ou desatualizadas e solicitação de exclusão ou anonimização, quando cabível.",
-      "Também poderá solicitar informações sobre compartilhamento, revogar consentimento quando essa for a base legal utilizada e apresentar outras solicitações previstas na legislação.",
-      "Os pedidos estarão sujeitos à verificação razoável da identidade do solicitante e às limitações legais aplicáveis.",
+      "A Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018) prevê direitos que podem incluir confirmação do tratamento, acesso, correção, anonimização, bloqueio, eliminação e informações sobre compartilhamento, conforme as condições legais aplicáveis.",
+      "O titular poderá apresentar solicitações ao responsável pelo tratamento, que poderá verificar sua identidade e avaliar eventuais limitações legais.",
     ],
   },
   {
-    title: "11. Dados de crianças e adolescentes",
+    title: "11. Cookies e armazenamento local",
     paragraphs: [
-      "A plataforma não deve ser utilizada para coletar desnecessariamente dados pessoais de crianças ou adolescentes.",
-      "Quando houver tratamento de dados pessoais de crianças e adolescentes, deverão ser observadas as disposições legais específicas e o melhor interesse dessas pessoas.",
+      "O site poderá utilizar cookies e mecanismos de armazenamento no navegador conforme as funcionalidades efetivamente implementadas.",
+      "Para mais informações sobre essas tecnologias, consulte a Política de Cookies.",
     ],
   },
   {
-    title: "12. Cookies e armazenamento local",
+    title: "12. Alterações nesta política",
     paragraphs: [
-      "O site poderá utilizar cookies e mecanismos de armazenamento do navegador conforme as funcionalidades efetivamente implementadas.",
-      "As informações específicas sobre essas tecnologias devem ser consultadas na Política de Cookies.",
-    ],
-  },
-  {
-    title: "13. Alterações nesta política",
-    paragraphs: [
-      "Esta política poderá ser atualizada para refletir mudanças no funcionamento do ConectaTrampo, na infraestrutura técnica ou nas exigências legais.",
-      "A versão atualizada será publicada nesta página, acompanhada da data de revisão.",
+      "Esta política poderá ser atualizada em razão de mudanças nas funcionalidades, nos fornecedores, nas práticas de tratamento ou nas exigências legais.",
+      "A versão vigente será disponibilizada nesta página com a data da última atualização.",
     ],
   },
 ];
 
 export default function PrivacidadePage() {
   return (
-    <main className="min-h-screen bg-slate-950 px-4 py-12 text-slate-100 sm:px-6 lg:px-8">
-      <article className="mx-auto max-w-4xl">
-        <header className="mb-10 border-b border-white/10 pb-8">
-          <a
-            href="/"
-            className="inline-flex items-center gap-2 text-sm font-semibold text-emerald-400 transition hover:text-emerald-300"
-          >
-            <span aria-hidden="true">←</span>
-            Voltar ao ConectaTrampo
+    <main className="legal-page">
+      <div className="wrap">
+        <header className="site-header">
+          <a href="/" className="brand" aria-label="ConectaTrampo - início">
+            <span className="brand-mark">CT</span>
+            <span>
+              Conecta<span className="brand-accent">Trampo</span>
+              <small>OPORTUNIDADES E CONEXÕES</small>
+            </span>
           </a>
 
-          <div className="mt-8 inline-flex rounded-full border border-emerald-400/20 bg-emerald-400/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-emerald-300">
-            Privacidade e proteção de dados
-          </div>
-
-          <h1 className="mt-4 text-3xl font-bold tracking-tight sm:text-5xl">
-            Política de Privacidade
-          </h1>
-
-          <p className="mt-4 max-w-2xl leading-7 text-slate-400">
-            Transparência sobre as informações tratadas durante o uso do
-            ConectaTrampo e sobre os direitos dos titulares de dados pessoais.
-          </p>
-
-          <p className="mt-4 text-sm text-slate-500">
-            Última atualização: 22 de outubro de 2026
-          </p>
+          <nav aria-label="Navegação principal">
+            <a href="/">Início</a>
+            <a href="/publicar" className="nav-publish">
+              Publicar oportunidade
+            </a>
+          </nav>
         </header>
 
-        <div className="mb-8 rounded-2xl border border-emerald-400/20 bg-emerald-400/5 p-5">
-          <h2 className="font-semibold text-emerald-300">
-            Proteção dos seus dados
-          </h2>
+        <article className="legal-content">
+          <a href="/" className="text-link">
+            ← Voltar ao ConectaTrampo
+          </a>
 
-          <p className="mt-2 text-sm leading-7 text-slate-300">
-            O tratamento de informações pessoais deve ser transparente,
-            limitado a finalidades legítimas e realizado de acordo com a
-            legislação aplicável, incluindo a LGPD.
+          <div className="eyebrow" style={{ marginTop: 30 }}>
+            <span className="eyebrow-icon">✦</span>
+            PRIVACIDADE E PROTEÇÃO DE DADOS
+          </div>
+
+          <h1>
+            Política de <span>Privacidade</span>
+          </h1>
+
+          <p>
+            Entenda como as informações pessoais podem ser tratadas durante
+            o uso do ConectaTrampo.
           </p>
-        </div>
 
-        <div className="space-y-5">
-          {sections.map((section) => (
-            <section
-              key={section.title}
-              className="rounded-2xl border border-white/10 bg-white/[0.03] p-5 sm:p-7"
-            >
-              <h2 className="text-lg font-semibold text-white">
-                {section.title}
-              </h2>
+          <p className="legal-updated">
+            Última atualização: 22 de outubro de 2026
+          </p>
 
-              <div className="mt-3 space-y-3">
-                {section.paragraphs.map((paragraph, index) => (
-                  <p
-                    key={index}
-                    className="text-sm leading-7 text-slate-300 sm:text-base"
-                  >
-                    {paragraph}
-                  </p>
-                ))}
-              </div>
+          <div className="legal-alert">
+            <strong>Seus dados merecem cuidado.</strong>
+            <br />
+            O tratamento de informações deve ser transparente, limitado a
+            finalidades legítimas e realizado conforme a legislação aplicável,
+            incluindo a LGPD.
+          </div>
+
+          {sections.map((section, index) => (
+            <section key={section.title} id={`secao-${index + 1}`}>
+              <h2>{section.title}</h2>
+
+              {section.paragraphs.map((paragraph, paragraphIndex) => (
+                <p key={paragraphIndex}>{paragraph}</p>
+              ))}
             </section>
           ))}
-        </div>
 
-        <section className="mt-8 rounded-2xl border border-amber-400/20 bg-amber-400/5 p-5 sm:p-7">
-          <h2 className="font-semibold text-amber-300">
-            Contato sobre dados pessoais
-          </h2>
+          <div className="legal-alert">
+            <strong>Contato sobre dados pessoais</strong>
+            <br />
+            Antes de publicar esta política como versão definitiva, informe
+            os dados do responsável pelo tratamento e disponibilize um canal
+            oficial para solicitações de privacidade.
+          </div>
 
-          <p className="mt-3 text-sm leading-7 text-slate-300">
-            Para exercer seus direitos ou esclarecer dúvidas sobre o tratamento
-            de dados, utilize o canal oficial de contato do responsável pelo
-            ConectaTrampo.
-          </p>
-
-          <p className="mt-3 text-sm leading-7 text-slate-300">
-            Antes da publicação, o responsável deverá informar seus dados de
-            identificação e disponibilizar um canal de contato válido para
-            solicitações relacionadas à privacidade.
-          </p>
-        </section>
-
-        <footer className="mt-10 border-t border-white/10 pt-6">
-          <div className="flex flex-wrap gap-4 text-sm">
-            <a
-              href="/cookies"
-              className="text-emerald-400 hover:text-emerald-300"
-            >
+          <div
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              gap: 12,
+              marginTop: 28,
+            }}
+          >
+            <a href="/cookies" className="button button-secondary">
               Política de Cookies
             </a>
 
-            <a
-              href="/termos"
-              className="text-emerald-400 hover:text-emerald-300"
-            >
+            <a href="/termos" className="button button-secondary">
               Termos de Uso
             </a>
+
+            <a href="/" className="button button-primary">
+              Voltar ao início →
+            </a>
+          </div>
+        </article>
+
+        <footer className="simple-footer">
+          <span>© 2026 ConectaTrampo</span>
+          <div>
+            <a href="/privacidade">Privacidade</a>
+            <a href="/cookies">Cookies</a>
+            <a href="/termos">Termos de Uso</a>
           </div>
         </footer>
-      </article>
+      </div>
     </main>
   );
 }

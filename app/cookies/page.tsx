@@ -1,131 +1,160 @@
-export const metadata = {
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
   title: "Política de Cookies | ConectaTrampo",
   description:
-    "Saiba como o ConectaTrampo utiliza cookies e tecnologias de armazenamento.",
+    "Entenda como cookies e tecnologias de armazenamento podem ser utilizados no ConectaTrampo.",
 };
 
 const sections = [
   {
     title: "1. O que são cookies?",
-    content:
-      "Cookies são pequenos arquivos armazenados no navegador ou dispositivo do usuário quando ele acessa um site. Eles podem ajudar a manter funcionalidades, lembrar preferências e compreender como um serviço é utilizado.",
+    paragraphs: [
+      "Cookies são pequenos arquivos que podem ser armazenados no navegador durante a visita a um site. Eles podem permitir o funcionamento de recursos, guardar preferências e auxiliar na segurança e na análise de utilização.",
+    ],
   },
   {
-    title: "2. Como utilizamos essas tecnologias?",
-    content:
-      "O ConectaTrampo pode utilizar cookies e tecnologias semelhantes para permitir o funcionamento da plataforma, manter preferências e melhorar a experiência de navegação. As tecnologias efetivamente utilizadas dependem da configuração e dos recursos habilitados no site.",
+    title: "2. Como o ConectaTrampo utiliza essas tecnologias?",
+    paragraphs: [
+      "A utilização de cookies depende dos recursos efetivamente implementados na plataforma. Eles podem ser utilizados para viabilizar funcionalidades, preservar preferências ou contribuir para a segurança do serviço.",
+      "A existência de um banco de dados não significa, por si só, que o site utiliza cookies. O armazenamento de informações no servidor e o armazenamento no navegador são mecanismos diferentes.",
+    ],
   },
   {
     title: "3. Armazenamento no navegador",
-    content:
-      "Além dos cookies, aplicações web podem utilizar recursos como localStorage e sessionStorage. Esses mecanismos armazenam informações no próprio navegador e não são a mesma coisa que cookies. Sua utilização pelo ConectaTrampo deve corresponder às funcionalidades efetivamente implementadas.",
+    paragraphs: [
+      "Aplicações web também podem utilizar recursos como localStorage e sessionStorage para manter informações no navegador. Esses recursos são diferentes dos cookies e podem ter finalidades específicas de funcionamento.",
+      "O uso dessas tecnologias pelo ConectaTrampo deve corresponder às funcionalidades realmente presentes no código da aplicação.",
+    ],
   },
   {
-    title: "4. Cookies essenciais",
-    content:
-      "Cookies estritamente necessários, quando utilizados, podem ser importantes para o funcionamento e a segurança de determinadas funcionalidades. Eles não devem ser confundidos com cookies de publicidade ou de análise de comportamento.",
+    title: "4. Cookies necessários",
+    paragraphs: [
+      "Quando utilizados, cookies estritamente necessários podem viabilizar funcionalidades essenciais ou mecanismos de segurança. A classificação de um cookie depende de sua finalidade e de como é utilizado.",
+    ],
   },
   {
     title: "5. Cookies de análise e publicidade",
-    content:
-      "Cookies de análise, publicidade ou rastreamento de terceiros somente devem ser utilizados quando esses serviços estiverem efetivamente integrados à plataforma. Caso sejam implementados, as informações correspondentes e os mecanismos de consentimento aplicáveis deverão ser apresentados ao usuário.",
+    paragraphs: [
+      "Cookies destinados a publicidade, rastreamento ou análise de comportamento somente devem ser descritos como utilizados quando os respectivos serviços estiverem integrados à plataforma.",
+      "Caso sejam implementadas tecnologias que exijam consentimento, o ConectaTrampo deverá fornecer informações claras e disponibilizar os mecanismos de escolha aplicáveis.",
+    ],
   },
   {
     title: "6. Como gerenciar cookies?",
-    content:
-      "O usuário pode consultar as configurações do navegador para visualizar, bloquear ou excluir cookies. O bloqueio de determinadas tecnologias poderá afetar o funcionamento de alguns recursos do site.",
+    paragraphs: [
+      "O usuário pode consultar as configurações do navegador para visualizar, bloquear ou excluir cookies. O bloqueio de determinadas tecnologias pode afetar alguns recursos do site.",
+      "Quando aplicável, as escolhas de consentimento deverão ser disponibilizadas de maneira acessível e respeitadas pela plataforma.",
+    ],
   },
   {
-    title: "7. Alterações nesta política",
-    content:
-      "Esta política poderá ser atualizada em razão de mudanças nas funcionalidades, nas tecnologias utilizadas ou nas exigências legais. A versão vigente estará disponível nesta página.",
+    title: "7. Serviços de terceiros",
+    paragraphs: [
+      "Se o ConectaTrampo incorporar ferramentas externas que utilizem cookies ou tecnologias semelhantes, as informações sobre esses serviços deverão ser incluídas nesta política.",
+      "Os serviços de terceiros podem possuir suas próprias políticas e práticas de tratamento de dados.",
+    ],
+  },
+  {
+    title: "8. Atualizações desta política",
+    paragraphs: [
+      "Esta política poderá ser atualizada em razão de alterações nas funcionalidades, nas tecnologias utilizadas ou nas exigências legais. A versão vigente estará disponível nesta página.",
+    ],
   },
 ];
 
 export default function CookiesPage() {
   return (
-    <main className="min-h-screen bg-slate-950 px-4 py-12 text-slate-100 sm:px-6 lg:px-8">
-      <article className="mx-auto max-w-4xl">
-        <header className="mb-10 border-b border-white/10 pb-8">
-          <a
-            href="/"
-            className="inline-flex items-center gap-2 text-sm font-semibold text-emerald-400 transition hover:text-emerald-300"
-          >
-            <span aria-hidden="true">←</span>
-            Voltar ao ConectaTrampo
+    <main className="legal-page">
+      <div className="wrap">
+        <header className="site-header">
+          <a href="/" className="brand" aria-label="ConectaTrampo - início">
+            <span className="brand-mark">CT</span>
+            <span>
+              Conecta<span className="brand-accent">Trampo</span>
+              <small>OPORTUNIDADES E CONEXÕES</small>
+            </span>
           </a>
 
-          <div className="mt-8 inline-flex rounded-full border border-emerald-400/20 bg-emerald-400/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-emerald-300">
-            Transparência
-          </div>
-
-          <h1 className="mt-4 text-3xl font-bold tracking-tight sm:text-5xl">
-            Política de Cookies
-          </h1>
-
-          <p className="mt-4 max-w-2xl leading-7 text-slate-400">
-            Entenda como cookies e outras tecnologias de armazenamento podem
-            ser utilizados durante sua navegação no ConectaTrampo.
-          </p>
-
-          <p className="mt-4 text-sm text-slate-500">
-            Última atualização: 22 de outubro de 2026
-          </p>
+          <nav aria-label="Navegação principal">
+            <a href="/">Início</a>
+            <a href="/publicar" className="nav-publish">
+              Publicar oportunidade
+            </a>
+          </nav>
         </header>
 
-        <div className="mb-8 rounded-2xl border border-emerald-400/20 bg-emerald-400/5 p-5">
-          <h2 className="font-semibold text-emerald-300">
-            Nosso compromisso
-          </h2>
+        <article className="legal-content">
+          <a href="/" className="text-link">
+            ← Voltar ao ConectaTrampo
+          </a>
 
-          <p className="mt-2 text-sm leading-7 text-slate-300">
-            Buscamos utilizar apenas as tecnologias necessárias para oferecer
-            uma experiência funcional, segura e transparente. A descrição
-            definitiva desta política deve refletir os recursos realmente
-            habilitados no site.
+          <div className="eyebrow" style={{ marginTop: 30 }}>
+            <span className="eyebrow-icon">✦</span>
+            TRANSPARÊNCIA DIGITAL
+          </div>
+
+          <h1>
+            Política de <span>Cookies</span>
+          </h1>
+
+          <p>
+            Saiba como cookies e outras tecnologias de armazenamento podem
+            funcionar durante sua navegação no ConectaTrampo.
           </p>
-        </div>
 
-        <div className="space-y-5">
-          {sections.map((section) => (
-            <section
-              key={section.title}
-              className="rounded-2xl border border-white/10 bg-white/[0.03] p-5 sm:p-7"
-            >
-              <h2 className="text-lg font-semibold text-white">
-                {section.title}
-              </h2>
+          <p className="legal-updated">
+            Última atualização: 22 de outubro de 2026
+          </p>
 
-              <p className="mt-3 text-sm leading-7 text-slate-300 sm:text-base">
-                {section.content}
-              </p>
+          <div className="legal-alert">
+            <strong>Transparência em primeiro lugar.</strong>
+            <br />
+            Esta política deve refletir as tecnologias efetivamente utilizadas
+            pela plataforma. Cookies, armazenamento no navegador e banco de
+            dados são mecanismos distintos.
+          </div>
+
+          {sections.map((section, index) => (
+            <section key={section.title} id={`secao-${index + 1}`}>
+              <h2>{section.title}</h2>
+
+              {section.paragraphs.map((paragraph, paragraphIndex) => (
+                <p key={paragraphIndex}>{paragraph}</p>
+              ))}
             </section>
           ))}
-        </div>
 
-        <footer className="mt-10 border-t border-white/10 pt-6">
-          <p className="text-sm leading-6 text-slate-500">
-            Para dúvidas sobre esta política, utilize o canal de contato oficial
-            informado na Política de Privacidade.
-          </p>
-
-          <div className="mt-5 flex flex-wrap gap-4 text-sm">
-            <a
-              href="/privacidade"
-              className="text-emerald-400 hover:text-emerald-300"
-            >
+          <div
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              gap: 12,
+              marginTop: 28,
+            }}
+          >
+            <a href="/privacidade" className="button button-secondary">
               Política de Privacidade
             </a>
 
-            <a
-              href="/termos"
-              className="text-emerald-400 hover:text-emerald-300"
-            >
+            <a href="/termos" className="button button-secondary">
               Termos de Uso
             </a>
+
+            <a href="/" className="button button-primary">
+              Voltar ao início →
+            </a>
+          </div>
+        </article>
+
+        <footer className="simple-footer">
+          <span>© 2026 ConectaTrampo</span>
+          <div>
+            <a href="/privacidade">Privacidade</a>
+            <a href="/cookies">Cookies</a>
+            <a href="/termos">Termos de Uso</a>
           </div>
         </footer>
-      </article>
+      </div>
     </main>
   );
 }
