@@ -1,7 +1,9 @@
-export const metadata = {
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
   title: "Termos de Uso | ConectaTrampo",
   description:
-    "Conheça as regras de utilização, publicação e divulgação de oportunidades no ConectaTrampo.",
+    "Conheça as regras para utilizar e publicar oportunidades no ConectaTrampo.",
 };
 
 const sections = [
@@ -9,211 +11,261 @@ const sections = [
     title: "1. Sobre o ConectaTrampo",
     paragraphs: [
       "O ConectaTrampo é uma plataforma destinada à divulgação e consulta de oportunidades de emprego, trabalho autônomo e serviços freelance.",
-      "A plataforma permite que oportunidades sejam apresentadas aos interessados, que poderão utilizar os meios de contato ou os links informados nos anúncios para buscar mais informações.",
-      "Salvo quando expressamente informado, o ConectaTrampo não atua como empregador, agência de recrutamento ou representante dos anunciantes.",
+      "Os interessados podem consultar os anúncios e utilizar os meios de contato ou links disponibilizados pelos anunciantes.",
+      "Salvo quando expressamente informado, a plataforma não atua como empregadora nem representa os anunciantes.",
     ],
   },
   {
     title: "2. Aceitação dos termos",
     paragraphs: [
-      "Ao acessar ou utilizar a plataforma, o usuário declara que leu e compreendeu estes Termos de Uso.",
-      "Caso não concorde com as regras aqui estabelecidas, deverá deixar de utilizar as funcionalidades correspondentes.",
-      "O uso da plataforma também está sujeito à Política de Privacidade e à Política de Cookies.",
+      "Ao utilizar a plataforma, o usuário deve observar estes Termos de Uso e as demais políticas aplicáveis.",
+      "Caso não concorde com as condições, deverá deixar de utilizar as funcionalidades correspondentes.",
     ],
   },
   {
     title: "3. Publicação de oportunidades",
     paragraphs: [
-      "Os usuários poderão publicar oportunidades conforme as funcionalidades disponibilizadas pelo ConectaTrampo e as regras aplicáveis.",
-      "O anunciante é responsável pela exatidão, atualização e legitimidade das informações fornecidas, incluindo descrição da atividade, requisitos, remuneração, localização e meios de contato.",
-      "A publicação de um anúncio não significa que o ConectaTrampo tenha verificado integralmente a identidade do anunciante, a existência da vaga ou a legitimidade da oportunidade.",
+      "Os usuários poderão publicar oportunidades de acordo com as funcionalidades disponibilizadas pela plataforma.",
+      "Quem publica um anúncio é responsável pela veracidade, atualização e legitimidade das informações fornecidas, incluindo descrição, requisitos, remuneração e meios de contato.",
+      "A publicação não significa que o ConectaTrampo tenha verificado integralmente a identidade do anunciante ou a autenticidade da oportunidade.",
     ],
   },
   {
-    title: "4. Informações proibidas ou inadequadas",
+    title: "4. Conteúdos proibidos",
     paragraphs: [
-      "É proibido utilizar a plataforma para publicar anúncios fraudulentos, oportunidades inexistentes, esquemas de pirâmide, atividades ilegais ou conteúdos destinados a enganar usuários.",
-      "Também não é permitido utilizar os anúncios para disseminar malware, praticar phishing, coletar dados pessoais indevidamente, divulgar informações privadas de terceiros ou promover discriminação ilegal.",
-      "O anunciante não deve exigir pagamentos suspeitos, senhas, códigos de autenticação ou dados bancários desnecessários como condição para apresentar uma oportunidade.",
+      "É proibido publicar oportunidades fraudulentas, vagas inexistentes, esquemas de pirâmide, atividades ilegais ou conteúdos destinados a enganar usuários.",
+      "Também são proibidos anúncios que promovam phishing, disseminem programas maliciosos, divulguem indevidamente dados pessoais ou violem direitos de terceiros.",
+      "Os usuários devem desconfiar de pedidos suspeitos de pagamentos, senhas, códigos de autenticação ou informações financeiras.",
     ],
   },
   {
-    title: "5. Veracidade e responsabilidade dos anunciantes",
+    title: "5. Responsabilidade dos anunciantes",
     paragraphs: [
-      "O anunciante deve possuir autorização para divulgar a oportunidade e utilizar os materiais, marcas, imagens e informações incluídos no anúncio.",
-      "O anunciante é responsável por manter as informações atualizadas e informar quando a oportunidade deixar de estar disponível.",
-      "O usuário interessado deve verificar as condições oferecidas, a identidade do anunciante e a legitimidade da oportunidade antes de fornecer documentos, realizar pagamentos ou assumir compromissos.",
+      "O anunciante deve possuir autorização para divulgar a oportunidade e utilizar os materiais apresentados no anúncio.",
+      "As informações devem ser mantidas atualizadas, e oportunidades encerradas devem deixar de ser anunciadas como disponíveis.",
+      "Os interessados devem verificar a legitimidade do anunciante e as condições oferecidas antes de compartilhar documentos, realizar pagamentos ou assumir compromissos.",
     ],
   },
   {
-    title: "6. Análise, denúncias e moderação",
+    title: "6. Denúncias e moderação",
     paragraphs: [
-      "O ConectaTrampo poderá disponibilizar mecanismos para que usuários comuniquem anúncios suspeitos, incorretos ou incompatíveis com estes termos.",
-      "Quando houver indícios de fraude, abuso, violação de direitos ou risco à segurança, a plataforma poderá analisar o conteúdo e adotar medidas proporcionais, incluindo ocultação, remoção ou restrição do anúncio, observadas as obrigações legais aplicáveis.",
-      "A publicação de uma oportunidade não representa garantia de autenticidade, aprovação ou recomendação por parte da plataforma.",
+      "Quando houver mecanismos de denúncia disponíveis, os usuários poderão comunicar anúncios suspeitos, incorretos ou incompatíveis com estes termos.",
+      "Diante de indícios de fraude, abuso, violação de direitos ou risco à segurança, a plataforma poderá analisar o conteúdo e adotar medidas proporcionais, incluindo ocultação ou remoção de anúncios.",
+      "A presença de um anúncio não representa garantia de autenticidade nem recomendação do ConectaTrampo.",
     ],
   },
   {
     title: "7. Edição, encerramento e exclusão",
     paragraphs: [
-      "Quando a funcionalidade estiver disponível, o responsável pelo anúncio poderá atualizar as informações da oportunidade.",
-      "Oportunidades preenchidas ou encerradas deverão ser identificadas ou retiradas da listagem pública conforme os recursos disponibilizados pela plataforma.",
-      "A reativação de um anúncio dependerá das funcionalidades existentes e da confirmação de que a oportunidade continua válida.",
-      "A exclusão de um anúncio da listagem pública não significa necessariamente a eliminação imediata de todos os registros técnicos ou cópias de segurança. Eventual conservação deverá respeitar a Política de Privacidade e a legislação aplicável.",
+      "As oportunidades poderão ser editadas, encerradas, reativadas ou excluídas conforme as funcionalidades disponibilizadas pela plataforma e as permissões aplicáveis.",
+      "Uma oportunidade encerrada poderá deixar de aparecer na listagem pública sem que isso signifique a exclusão imediata de todos os registros do banco de dados.",
+      "A conservação ou exclusão de registros deverá observar a Política de Privacidade e a legislação aplicável.",
     ],
   },
   {
-    title: "8. Links e contatos externos",
+    title: "8. Links externos",
     paragraphs: [
-      "Os anúncios podem direcionar o usuário a páginas, formulários, aplicativos de mensagens ou outros serviços externos.",
-      "O usuário deve verificar o endereço acessado e avaliar a confiabilidade do destinatário antes de compartilhar informações pessoais.",
-      "O ConectaTrampo não controla necessariamente os serviços de terceiros nem suas práticas de segurança, privacidade, contratação ou pagamento.",
+      "Os anúncios podem conter links para sites, formulários, aplicativos de mensagens ou serviços de terceiros.",
+      "Ao acessar esses ambientes, o usuário estará sujeito às regras e políticas dos respectivos serviços. O ConectaTrampo não controla necessariamente as práticas adotadas por terceiros.",
+      "Verifique os endereços acessados e a confiabilidade dos destinatários antes de fornecer informações pessoais.",
     ],
   },
   {
     title: "9. Ausência de garantia de contratação",
     paragraphs: [
-      "A divulgação de uma oportunidade não garante contato, entrevista, contratação, recebimento de propostas ou remuneração.",
-      "As condições de trabalho, os acordos comerciais, os pagamentos e a relação entre anunciantes e interessados são de responsabilidade das partes envolvidas, respeitada a legislação aplicável.",
-      "O ConectaTrampo não deve ser interpretado como parte de uma relação de trabalho ou contrato entre usuários apenas por disponibilizar o anúncio.",
+      "A divulgação de uma oportunidade não garante contato, entrevista, contratação ou recebimento de remuneração.",
+      "As condições da contratação ou prestação de serviços são estabelecidas entre as partes envolvidas, respeitada a legislação aplicável.",
+      "A utilização da plataforma, por si só, não torna o ConectaTrampo parte de uma relação de trabalho ou contrato entre usuários.",
     ],
   },
   {
-    title: "10. Disponibilidade da plataforma",
+    title: "10. Disponibilidade do serviço",
     paragraphs: [
-      "O ConectaTrampo busca manter o serviço disponível e funcional, mas não garante funcionamento ininterrupto ou ausência de falhas.",
-      "Manutenções, atualizações, falhas técnicas, indisponibilidade de fornecedores e outros eventos poderão afetar temporariamente o acesso à plataforma.",
+      "A plataforma busca manter seus recursos disponíveis, mas podem ocorrer interrupções decorrentes de manutenção, atualizações, falhas técnicas ou indisponibilidade de fornecedores.",
+      "Não é possível garantir funcionamento ininterrupto ou ausência absoluta de erros.",
     ],
   },
   {
     title: "11. Propriedade intelectual",
     paragraphs: [
-      "Os elementos próprios da plataforma, incluindo sua identidade visual, marca, interface e conteúdos originais, são protegidos pelas normas aplicáveis de propriedade intelectual.",
-      "O usuário mantém os direitos sobre os materiais que legitimamente lhe pertencem, mas declara possuir autorização para publicar os conteúdos enviados à plataforma.",
-      "O envio de um conteúdo para publicação autoriza sua exibição na plataforma na medida necessária para disponibilizar o anúncio, sem transferência automática da titularidade dos direitos.",
+      "A marca, a identidade visual, a interface e os conteúdos originais do ConectaTrampo são protegidos pelas normas aplicáveis.",
+      "O usuário que publica conteúdo declara possuir os direitos ou autorizações necessários para sua utilização.",
+      "O envio de conteúdo permite sua exibição na plataforma para a finalidade de divulgação do anúncio, sem transferência automática da titularidade dos direitos.",
     ],
   },
   {
-    title: "12. Proteção de dados",
+    title: "12. Privacidade e dados pessoais",
     paragraphs: [
-      "O tratamento de informações pessoais decorrente da utilização do ConectaTrampo será realizado conforme a Política de Privacidade e a legislação aplicável.",
-      "Os usuários devem evitar publicar documentos pessoais, dados bancários, informações sensíveis ou dados pessoais de terceiros sem fundamento legítimo.",
+      "O tratamento de dados pessoais está sujeito à Política de Privacidade e à legislação aplicável, incluindo a Lei Geral de Proteção de Dados Pessoais (LGPD).",
+      "Os usuários devem evitar divulgar documentos pessoais, dados bancários ou informações privadas de terceiros nos anúncios.",
     ],
   },
   {
-    title: "13. Suspensão e restrição de uso",
+    title: "13. Restrições de uso",
     paragraphs: [
       "A plataforma poderá adotar medidas proporcionais diante de indícios de fraude, abuso, violação destes termos, risco à segurança ou determinação legal.",
-      "Sempre que apropriado e juridicamente possível, as medidas poderão considerar a gravidade da ocorrência, a proteção dos usuários e a necessidade de preservar evidências.",
+      "Quando apropriado e juridicamente possível, as medidas considerarão a gravidade da ocorrência e a proteção dos usuários.",
     ],
   },
   {
     title: "14. Alterações nos termos",
     paragraphs: [
-      "Estes termos poderão ser atualizados para refletir mudanças na plataforma, nas funcionalidades ou na legislação.",
-      "A versão vigente será disponibilizada nesta página, acompanhada da data de atualização.",
+      "Estes termos poderão ser atualizados em razão de mudanças nas funcionalidades, no funcionamento da plataforma ou na legislação.",
+      "A versão vigente ficará disponível nesta página, acompanhada da data da última atualização.",
     ],
   },
   {
     title: "15. Legislação aplicável",
     paragraphs: [
-      "Estes termos deverão ser interpretados conforme a legislação brasileira aplicável, respeitados os direitos dos consumidores e demais normas que incidam sobre a relação concreta.",
-      "Nenhuma disposição destes termos pretende excluir direitos ou responsabilidades que não possam ser afastados pela legislação.",
+      "Estes termos são interpretados conforme a legislação brasileira aplicável, respeitados os direitos e as responsabilidades que não possam ser afastados por contrato.",
     ],
   },
 ];
 
 export default function TermosPage() {
   return (
-    <main className="min-h-screen bg-slate-950 px-4 py-12 text-slate-100 sm:px-6 lg:px-8">
-      <article className="mx-auto max-w-4xl">
-        <header className="mb-10 border-b border-white/10 pb-8">
-          <a
-            href="/"
-            className="inline-flex items-center gap-2 text-sm font-semibold text-emerald-400 transition hover:text-emerald-300"
-          >
-            <span aria-hidden="true">←</span>
-            Voltar ao ConectaTrampo
+    <main className="legal-page">
+      <div className="wrap">
+        <header className="site-header">
+          <a href="/" className="brand" aria-label="ConectaTrampo - início">
+            <span className="brand-mark">CT</span>
+
+            <span>
+              Conecta<span className="brand-accent">Trampo</span>
+              <small>OPORTUNIDADES E CONEXÕES</small>
+            </span>
           </a>
 
-          <div className="mt-8 inline-flex rounded-full border border-emerald-400/20 bg-emerald-400/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-emerald-300">
-            Regras da plataforma
+          <nav aria-label="Navegação principal">
+            <a href="/">Início</a>
+            <a href="/publicar" className="nav-publish">
+              Publicar oportunidade
+            </a>
+          </nav>
+        </header>
+
+        <article className="legal-content">
+          <a href="/" className="text-link">
+            ← Voltar ao ConectaTrampo
+          </a>
+
+          <div className="eyebrow" style={{ marginTop: 30 }}>
+            <span className="eyebrow-icon">✦</span>
+            REGRAS DA PLATAFORMA
           </div>
 
-          <h1 className="mt-4 text-3xl font-bold tracking-tight sm:text-5xl">
-            Termos de Uso
+          <h1>
+            Termos de <span>Uso</span>
           </h1>
 
-          <p className="mt-4 max-w-2xl leading-7 text-slate-400">
+          <p>
             Regras para utilização, publicação, divulgação e consulta de
             oportunidades no ConectaTrampo.
           </p>
 
-          <p className="mt-4 text-sm text-slate-500">
+          <p className="legal-updated">
             Última atualização: 22 de outubro de 2026
           </p>
-        </header>
 
-        <div className="mb-8 rounded-2xl border border-emerald-400/20 bg-emerald-400/5 p-5">
-          <h2 className="font-semibold text-emerald-300">
-            Utilize a plataforma com responsabilidade
-          </h2>
+          <div className="legal-alert">
+            <strong>Utilize a plataforma com responsabilidade.</strong>
+            <br />
+            O ConectaTrampo facilita a divulgação de oportunidades. Quem
+            publica deve fornecer informações verdadeiras, e quem consulta
+            deve verificar a legitimidade dos anúncios antes de assumir
+            compromissos.
+          </div>
 
-          <p className="mt-2 text-sm leading-7 text-slate-300">
-            O ConectaTrampo foi criado para facilitar a divulgação de
-            oportunidades. A qualidade das informações e a prevenção de
-            fraudes dependem também da responsabilidade de quem publica e de
-            quem utiliza os anúncios.
-          </p>
-        </div>
+          <nav
+            aria-label="Índice dos termos"
+            style={{
+              padding: "18px 20px",
+              border: "1px solid #eeeaf5",
+              borderRadius: 12,
+              background: "#faf9fd",
+              marginBottom: 28,
+            }}
+          >
+            <strong style={{ fontSize: 13 }}>Neste documento</strong>
 
-        <div className="space-y-5">
-          {sections.map((section) => (
+            <ol
+              style={{
+                paddingLeft: 20,
+                margin: "12px 0 0",
+                display: "grid",
+                gap: 7,
+              }}
+            >
+              {sections.map((section, index) => (
+                <li key={section.title} style={{ fontSize: 12 }}>
+                  <a
+                    href={`#secao-${index + 1}`}
+                    className="text-link"
+                    style={{ fontWeight: 500 }}
+                  >
+                    {section.title}
+                  </a>
+                </li>
+              ))}
+            </ol>
+          </nav>
+
+          {sections.map((section, index) => (
             <section
               key={section.title}
-              className="rounded-2xl border border-white/10 bg-white/[0.03] p-5 sm:p-7"
+              id={`secao-${index + 1}`}
+              style={{
+                paddingTop: 8,
+                scrollMarginTop: 24,
+              }}
             >
-              <h2 className="text-lg font-semibold text-white">
-                {section.title}
-              </h2>
+              <h2>{section.title}</h2>
 
-              <div className="mt-3 space-y-3">
-                {section.paragraphs.map((paragraph, index) => (
-                  <p
-                    key={index}
-                    className="text-sm leading-7 text-slate-300 sm:text-base"
-                  >
-                    {paragraph}
-                  </p>
-                ))}
-              </div>
+              {section.paragraphs.map((paragraph, paragraphIndex) => (
+                <p key={paragraphIndex}>{paragraph}</p>
+              ))}
             </section>
           ))}
-        </div>
 
-        <footer className="mt-10 border-t border-white/10 pt-6">
-          <p className="text-sm leading-6 text-slate-500">
-            Estes termos devem ser interpretados em conjunto com as políticas
-            de privacidade e cookies do ConectaTrampo.
-          </p>
+          <div className="legal-alert">
+            <strong>Precisa de ajuda?</strong>
+            <br />
+            Para dúvidas sobre o uso da plataforma, procure o canal oficial
+            de contato disponibilizado pelo ConectaTrampo.
+          </div>
 
-          <div className="mt-5 flex flex-wrap gap-4 text-sm">
-            <a
-              href="/privacidade"
-              className="text-emerald-400 hover:text-emerald-300"
-            >
+          <div
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              gap: 12,
+              marginTop: 24,
+            }}
+          >
+            <a href="/privacidade" className="button button-secondary">
               Política de Privacidade
             </a>
 
-            <a
-              href="/cookies"
-              className="text-emerald-400 hover:text-emerald-300"
-            >
+            <a href="/cookies" className="button button-secondary">
               Política de Cookies
             </a>
+
+            <a href="/" className="button button-primary">
+              Voltar ao início →
+            </a>
+          </div>
+        </article>
+
+        <footer className="simple-footer">
+          <span>© 2026 ConectaTrampo</span>
+
+          <div>
+            <a href="/privacidade">Privacidade</a>
+            <a href="/cookies">Cookies</a>
+            <a href="/termos">Termos de Uso</a>
           </div>
         </footer>
-      </article>
+      </div>
     </main>
   );
 }
